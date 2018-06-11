@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="intro-text">
+    <h1>{{intro_text.title}}</h1>
+	{% autoescape false %} {{intro_text.html}} {% endautoescape %}
+
+</div>
+
+<div class="latest-container">
+	<h1>Latest activity</h1>
+	<ul class="latest">
+		{% for item in items|sort(attribute='dateonly', reverse=True) %}
+        {% if loop.index > 5 %} {% break %} {% endif %}
+		<li>
+			<a href="{{SITEURL}}{{item.cathref}}" class="cat">{{item.categories[0]}}</a>
+			<a href="{{SITEURL}}{{item.href}}">{{item.title}}</a>
+			<span class="date">{{item.dateonly}}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<!--
+<div class="clear"></div>
+-->
+{% endblock %}

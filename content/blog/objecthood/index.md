@@ -1,0 +1,16 @@
+---
+title: Objecthood
+datestamp: 2013-01-08 13:23:57
+categories: Blog
+tags: gmin
+---
+
+Ever since [Lee de-Wit](https://perswww.kuleuven.be/~u0064325/) introduced me to his object-based attention experiments and Kantian objecthood ideas, I was fascinated by the idea that the atomic unit of visual processing is an object. The view that everything is an object, so vision attempts to extract objects from scenes, is widely shared in cognitive science (e.g., [Feldman, 2005](http://dx.doi.org/10.1016/S1364-6613(03)00111-6)). However, now I think that the concept of objecthood might actually be distracting our attention more than helping. This is part of a larger attitude that everything can be discretized, categorized, and labelled, suitable for the world where electrons are still orbiting the nucleus. Below are a few examples where the concept of objecthood leads to confusion.
+
+-   What is a difference between an object and a scene? Is a face an object? While I was at [Kanwisher lab](http://web.mit.edu/bcs/nklab/), these were some of those puzzling questions in people’s mind that occurred soon after the first successful parcellation of the cortex into the face-selective FFA, place-selective PPA, and shape-selective LOC. You can still see reminiscences of this mindset in Russell Epstein’s works (e.g., [Constructing scenes from objects in human occipitotemporal cortex (Nature Neuroscience, 2011)](http://dx.doi.org/10.1038/nn.2903)). Similarly, are lines objects yet? How about [contours with no filling](http://www.gestaltrevision.be/en/resources/our-software/82-resources/software/gert/226-example-stimuli) (see example 0021 in particular)?
+-   Here at KU Leuven, in one of the first lab meetings [Naoki Kogo](http://www.gestaltrevision.be/en/component/contact/contact/5) was questioning how to treat those objects that do not have pronounced borders, for example, mountains or waves. Naoki is developing [a model for surface construction using border ownership assignment](http://dx.doi.org/10.1037/a0019076), but what should he do in those cases when there are no clearly defined borders?
+-   [Marino and Scholl (2005)](http://dx.doi.org/10.3758/BF03193547) showed that the basic object-based attention paradigm (cue inside the same or a different rectangle) can be successfully replicated without using objects (rectangles) but merely relying on grouped elements (two parallel lines). Furthermore, they show that the “same object” advantage is less pronounced in the latter case, concluding that
+
+    > [O]bject-based attention is not an all-or-nothing phenomenon: Objectbased effects can be independently strengthened or weakened by multiple cues to “objecthood.”
+
+So I argue that we would be better off talking about grouping strength (in terms of probabilities), or, in other words, which elements are more likely to “go together” than others. When grouping is particularly pronounced, we call this group *an object*. But it is perfectly possible to have elements group only weakly, like in the case of a mountain. What do we call that mountain then? Well, we don’t call it anything. It is perfectly consistent with our visual phenomenology to perceive something without any tags – which led to this flawed belief that *everything* is categorizable.

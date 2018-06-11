@@ -1,0 +1,103 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400,400italic";
+@import "https://fonts.googleapis.com/css?family=Russo+One";
+
+body {
+	font-family:'Ubuntu',sans-serif;
+	border-top:5px solid #C95039;
+	color:#444
+}
+
+h1,h2,h3 {
+	font-family:'Russo One',sans-serif;
+	font-weight:400;
+	text-transform:normal
+}
+
+img {
+	max-height:486px;
+	max-width:80%
+}
+
+a,a:visited {
+	color:#444;
+	text-decoration:none;
+	border-bottom:thin dashed #555
+}
+
+a:hover {
+	color:#C95039;
+	text-decoration:none;
+	border-bottom:thin dashed #C95039
+}
+
+ul {
+	list-style-type:square
+}
+
+.license a {
+	border-bottom:0
+}
+
+.license img {
+	display:inline-block;
+	height:20px;
+	margin-right:10px;
+	margin-bottom:-4px
+}
+
+.logo {
+	display:inline-block;
+	width:9px;
+	height:9px;
+	background:#C95039;
+	margin-bottom:0
+}
+
+.logo-name {
+	display:inline-block;
+	margin-left:1px;
+	padding-bottom:5px;
+	font-family:'Russo One',sans-serif;
+	font-size:12px;
+	line-height:12px
+}
+
+.subtitle {
+	font-family:'Russo One';
+	font-size:32px
+}
+
+.source {
+	font-size:9px;
+	width:40%;
+	display:block;
+	float:right;
+	text-align:right
+}
+
+.remark-slide-content {
+	border-top:0 solid #C95039;
+	-webkit-margin-before:.07em;
+	padding-top:0;
+	font-size:18px;
+	line-height:28px
+}
+
+.remark-slide-content h2 {
+	-webkit-margin-before:20px
+}
+
+.remark-slide-content h3 {
+	font-size:24px
+}
+
+.remark-slide-number {
+	font-size:12px
+}
+
+@media print {
+    body {
+        color:#000;
+        border-top:0
+    }
+}

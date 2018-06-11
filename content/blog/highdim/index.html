@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<title>klab</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Jonas Kubilius">
+    <meta name="description" content="">
+    <meta name="keywords" content="mid-level vision, computer vision, human vision">
+    <meta name="google-site-verification" content="k1wISsyM_ADFRsWYOmwrowOMYSYu3MV5afsd-8B2AuQ" />
+    <meta content="Higher-dimensional spaces for feature representation" property="og:title" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css"/>
+	<link rel="stylesheet" href="https://klab.lt/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="https://klab.lt/favicon.ico" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <div class="logo-container">
+                <a href="https://klab.lt">
+                    <div class="logo"></div>
+                    <div class="logo-name">klab</div>
+                </a>
+                <div class="clear"></div>
+                <div class="tagline">&#34;What I cannot create, I do not understand.&#34; – R. Feynman</div>
+            </div>
+
+            <nav>
+                <ul>                    <li>                        <a href="https://klab.lt/blog/">Blog</a>
+                                            </li>                    <li>                        Publications
+                        <ul>                            <li><a href="https://klab.lt/publications/papers/">Papers</a></li>                            <li><a href="https://klab.lt/publications/posters/">Posters</a></li>                            <li><a href="https://klab.lt/publications/talks/">Talks</a></li>                            <li><a href="https://klab.lt/publications/figures/">Figures</a></li>                        </ul>
+                                            </li>                    <li>                        Education
+                        <ul>                            <li><a href="https://klab.lt/education/lectures/">Lectures</a></li>                        </ul>
+                                            </li>                    <li>                        About
+                        <ul>                            <li><a href="https://klab.lt/about/me/">Me</a></li>                            <li><a href="https://dl.dropboxusercontent.com/u/2498793/Kubilius-CV.pdf">My CV</a></li>                            <li><a href="https://klab.lt/about/media/">Media</a></li>                        </ul>
+                                            </li>                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">
+<div class="content">
+    <span class="pub-authors">
+        Jonas Kubilius
+    </span>
+
+    <h1>Higher-dimensional spaces for feature representation</h1>
+
+    <span class="pub-journal">
+             </span>
+
+
+
+
+
+
+        <span class="pub-links">
+    </span>
+    <div class="article-content">
+         <p>When we think how to parse an image, we imagine a two-dimensional input array on which clever manipulations have to be applied. So we try to come up with strategies for edge extraction, grouping them, using that for figure-ground segmentation and so forth. Sometimes (often?) however this unnecessarily complicates things.</p>
+<figure>
+<img src="banana.jpg" />
+<figcaption>source: <a href="http://www.morguefile.com/archive/display/10665">morgueFile.com</a></figcaption>
+</figure>
+
+<p>Consider an image on the right. Even performing some trivial figure-ground segmentation on it might be not a straightforward matter (I wouldn’t know where to start, actually). In their <a href="http://dx.doi.org/10.1145/1518701.1518903">2009 paper</a> (<a href="http://web.mit.edu/rruth/www/Papers/RosenholtzEtAlCHI2009PO.pdf">pdf</a>) and <a href="http://www.visionsciences.org/abstract_detail.php?id=1471">recently in VSS</a> (thanks <a href="http://gestaltrevision.be/en/about-us/principal-investigator">Johan</a>), <a href="http://persci.mit.edu/people/rosenholtz">Ruth Rosenholtz</a> and <a href="http://persci.mit.edu/people/ntwarog">Nat Twarog</a> put forward an idea that sometimes it is sufficient to blow up an image into a higher-dimensional space where relevant features would be represented. In the case of bananas, we could, for example, convert the image to greyscale and put the resulting luminance values in the third dimension of the image, as seen in the image below. Now you can easily see figure-ground segmentation with the (yellow) bananas being at the top, (brown) background on the bottom, and the table somewhat in between (red, green).</p>
+<figure>
+<img src="banana-repr.png" width=1024 height=671 />
+<figcaption>The view is as if the original image was lying flat and we were looking sideways at the image’s bottom side. For presentation purposes, each dot has been colored using its RGB value. [<a href="http://pastebin.com/sacXvH84">source code</a>]</figcaption>
+</figure>
+
+<p>This is not stunning news, of course, it does not magically parse objects from the image. It is simply a different way of representing the same information. But notice how it simplifies the problem of parsing an image and enhances our understanding of the information present in the image. We can then think more clearly about ways to process this information.</p>
+<p>Moreover, this idea quite naturally allows for grouping at multiple levels (hierarchical organization). Typically, there is no single grouping present in an image: bananas as a foreground and table plus wall as a background? Or is it bananas and table versus the wall? In the higher-dimensional representation, bananas go together if we only look at the top of the plot (group over luminance using a narrow filter). Bananas and table are grouped together using wider filters. Grouping scales emerge naturally in this representation and as Rosenholtz et al. (2009) show, this very simple approach can lead to a quite accurate parsing.</p>
+<p>I think GMin should represent images immediately in higher dimensional spaces, allowing grouping mechanisms to act over various feature dimensions depending on the task at hand. Moreover, this representation seems as an early step of <a href="http://dx.doi.org/10.1016/j.neuron.2012.01.010">Jim DiCarlo’s “manifold untangling” framework</a>. First we could blow up the space using the immediately available features (such as color and orientation), then <em>using tricks</em> we gradually transform it into an untangled representation with perceptually relevant features (such as objects and their poses).</p>     </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+                <footer>
+            (<a href="https://creativecommons.org/licenses/by/4.0/">cc-by</a>) 2012-2018 klab.lt &bull; source code available on <a href="https://github.com/qbilius/klab/" target="_blank">GitHub</a>
+        </footer>
+            </div>
+
+</body>
+</html>

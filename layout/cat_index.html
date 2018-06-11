@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{category}}</h1>
+
+<div class="content">
+	<ul class="years">
+        {# set items = items|selectattr("categories", "equalto", category) #}
+		{% for group in items|groupby('year')|reverse %}
+		<li class="pubs-container">
+			<h2 class="pubs-year">{{group.grouper}}</h2>
+			<ul class="pubs">
+				{% for item in group.list|sort(attribute='dateonly', reverse=True) %}
+				<li class="pub">
+                    {% if pagetype == 'publications' %} {% include 'pub_index.html' with context %}
+                    {% else %} {% include 'blog_index.html' with context %}
+                    {% endif %}
+				</li>
+				{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+
+</div>
+
+<div class="clear"></div>
+{% endblock %}

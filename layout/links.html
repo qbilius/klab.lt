@@ -1,0 +1,24 @@
+<span class="pub-links">
+    {% for name, href in item.links.items() %}
+      {% if name=='doi' %}
+          <a href="http://doi.org/{{item.links['doi']}}">
+              {% if 'Papers' in item.categories %}article
+              {% elif 'Posters' in item.categories or 'Talks' in item.categories %}abstract
+              {% elif 'Figures' in item.categories %}figure
+              {% else %}doi
+              {% endif %}
+          </a>
+      {% elif name != 'url' or 'Media' not in item.categories %}
+          <a href="{{href}}">{{name}}</a>
+      {% endif %}
+        <!-- {% if name in reserved_keys %} -->
+          <!-- {% if href is string %} -->
+
+          <!-- {% else %}
+              {% for this_href in href %}
+                  <a href="{{this_href}}">name loop.index</a>
+              {% endfor %}
+          {% endif %} -->
+        <!-- {% endif %} -->
+    {% endfor %}
+</span>

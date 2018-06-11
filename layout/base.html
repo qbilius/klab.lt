@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>{{TITLE}}</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="{{AUTHOR}}">
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="keywords" content="{{KEYWORDS}}">
+    <meta name="google-site-verification" content="{{GOOGLE_SITE_VERIFICATION}}" />
+    <meta content="{% if item is defined %}{{item.title}}{% else %}{{category}}{% endif %}" property="og:title" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css"/>
+	<link rel="stylesheet" href="{{SITEURL}}/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="{{SITEURL}}/favicon.ico" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <div class="logo-container">
+                <a href="{{SITEURL}}">
+                    <div class="logo"></div>
+                    <div class="logo-name">klab</div>
+                </a>
+                <div class="clear"></div>
+                <div class="tagline">{{TAGLINE}}</div>
+            </div>
+
+            <nav>
+                <ul>{% for topic, categories in nav %}
+                    <li>{% if categories is string %}
+                        <a href="{% if categories[:4] != 'http' %}{{SITEURL}}{%endif%}{{categories}}">{{topic}}</a>
+                        {% else %}
+                        {{topic}}
+                        <ul>{% for category, href in categories %}
+                            <li><a href="{% if href[:4] != 'http' %}{{SITEURL}}{%endif%}{{href}}">{{category}}</a></li>{% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>{% endfor %}
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">{% block content %} {% endblock %}</div>
+
+        {% if include_footer %}
+        <footer>
+            (<a href="https://creativecommons.org/licenses/by/4.0/">cc-by</a>) 2012-{{current_year}} {{SITENAME}} &bull; source code available on <a href="https://github.com/qbilius/klab/" target="_blank">GitHub</a>
+        </footer>
+        {% endif %}
+    </div>
+
+</body>
+</html>

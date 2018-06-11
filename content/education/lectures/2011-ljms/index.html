@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<title>klab</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Jonas Kubilius">
+    <meta name="description" content="">
+    <meta name="keywords" content="mid-level vision, computer vision, human vision">
+    <meta name="google-site-verification" content="k1wISsyM_ADFRsWYOmwrowOMYSYu3MV5afsd-8B2AuQ" />
+    <meta content="LJMS vasara 2011 m." property="og:title" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css"/>
+	<link rel="stylesheet" href="https://klab.lt/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="https://klab.lt/favicon.ico" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <div class="logo-container">
+                <a href="https://klab.lt">
+                    <div class="logo"></div>
+                    <div class="logo-name">klab</div>
+                </a>
+                <div class="clear"></div>
+                <div class="tagline">&#34;What I cannot create, I do not understand.&#34; – R. Feynman</div>
+            </div>
+
+            <nav>
+                <ul>                    <li>                        <a href="https://klab.lt/blog/">Blog</a>
+                                            </li>                    <li>                        Publications
+                        <ul>                            <li><a href="https://klab.lt/publications/papers/">Papers</a></li>                            <li><a href="https://klab.lt/publications/posters/">Posters</a></li>                            <li><a href="https://klab.lt/publications/talks/">Talks</a></li>                            <li><a href="https://klab.lt/publications/figures/">Figures</a></li>                        </ul>
+                                            </li>                    <li>                        Education
+                        <ul>                            <li><a href="https://klab.lt/education/lectures/">Lectures</a></li>                        </ul>
+                                            </li>                    <li>                        About
+                        <ul>                            <li><a href="https://klab.lt/about/me/">Me</a></li>                            <li><a href="https://dl.dropboxusercontent.com/u/2498793/Kubilius-CV.pdf">My CV</a></li>                            <li><a href="https://klab.lt/about/media/">Media</a></li>                        </ul>
+                                            </li>                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">
+<div class="content">
+    <span class="pub-authors">
+        Jonas Kubilius
+    </span>
+
+    <h1>LJMS vasara 2011 m.</h1>
+
+    <span class="pub-journal">
+         LJMS vasaros stovykla
+    </span>
+
+    ,     <span class="pub-loc">
+         Molėtų astronomijos observatorija (Lithuania)
+            </span>
+
+    <span class="datea">, 2011-07-31 17:00:00</span>
+
+
+
+
+        <span class="pub-links">
+                    <a href="http://neuromokslai.files.wordpress.com/2011/08/ljms_vasara2011_regos_sistemos_modeliavimas.pdf">slides</a>
+              <!--  -->
+    </span>
+    <div class="article-content">
+         <h1>Atsakymai į paskaitos metu neatsakytus klausimus</h1>
+<p><strong>Perceptronas: kam reikalinga g(x) (25-26 skaidrės)? Gal užtektų tiesiog g(x) = x?</strong></p>
+<p>Yra kelios priežastys naudoti sudėtingesnę funkciją. Iš vienos pusės, neuroniniuose tinkluose kažkiek bandoma išlaikyti panašumą į biologinius neuroninius tinklus. O neuronai turi tam tikras ribas, kiek kartų per sekundę jie gali perduoti impulsą. Jei <em>g(x)</em> būtų lygu <em>x</em>, tada jokių tokių ribų nebūtų. Todėl praktikoje naudojama, pavyzdžiui, <em><a href="http://en.wikipedia.org/wiki/Heaviside_step_function">Heaviside step funkcija</a></em> arba <em><a href="http://en.wikipedia.org/wiki/Sigmoid_function">sigmoidinė funkcija</a></em>, kurios turi viršutinę ribą. Iš kitos pusės, jeigu leisim išvesčiai augti be apribojimų, tai dar gali būti, kad visas neuroninis tinklas taps nestabilus ir nepavyks jo ištreniruoti (pasiekti lokalaus minimumo).</p>
+<p><strong>Neurono selektyvumo pokytis (48 skaidrė) – kodėl neurono selektyvumas sumažėja P stimului (šuniukui) ir išauga N stimului (raganosiui)? Juk jeigu P ir N stimulai rodomi greta vienas kito laike, neuronas turėtų išlikti selektyvus P stimului ir, be to, tapti selektyvus N stimului.</strong></p>
+<p>Atkreipkime dėmesį į eksperimento dizainą (47 skaidrė, B). Neuronui parenkami du stimulai: P (<em>prefered</em>) stimulas (šuniukas), į kurį neuronas reaguoja aktyviau nei į N (<em>non-prefered</em>) stimulą (raganosį). Tada P stimulas asocijuojamas laike su dvigubai didesniu N stimulu, ir atvirkščiai. Vadinasi, neuronas išmoksta traktuoti vidutinio dydžio P stimulą ir didelį N stimulą kaip tą patį objektą.  Testuojant naudojami tik pastarieji, dvigubai didesni stimulai. Ko galima tikėtis? Kad neuronas, kuris šiaip jau mėgsta P stimulus, dabar aktyviai reaguos ir į didelį N stimulą. Taip pat – kad tas pats neuronas, šiaip jau nemėgstantis N stimulų, ims menkiau reaguoti ir į didelį P stimulą.</p>     </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+                <footer>
+            (<a href="https://creativecommons.org/licenses/by/4.0/">cc-by</a>) 2012-2018 klab.lt &bull; source code available on <a href="https://github.com/qbilius/klab/" target="_blank">GitHub</a>
+        </footer>
+            </div>
+
+</body>
+</html>

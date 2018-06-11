@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>klab</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Jonas Kubilius">
+    <meta name="description" content="">
+    <meta name="keywords" content="mid-level vision, computer vision, human vision">
+    <meta name="google-site-verification" content="k1wISsyM_ADFRsWYOmwrowOMYSYu3MV5afsd-8B2AuQ" />
+    <meta content="Summary of: Perceptual organization of two-dimensional patterns" property="og:title" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css"/>
+	<link rel="stylesheet" href="https://klab.lt/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="https://klab.lt/favicon.ico" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <div class="logo-container">
+                <a href="https://klab.lt">
+                    <div class="logo"></div>
+                    <div class="logo-name">klab</div>
+                </a>
+                <div class="clear"></div>
+                <div class="tagline">&#34;What I cannot create, I do not understand.&#34; – R. Feynman</div>
+            </div>
+
+            <nav>
+                <ul>                    <li>                        <a href="https://klab.lt/blog/">Blog</a>
+                                            </li>                    <li>                        Publications
+                        <ul>                            <li><a href="https://klab.lt/publications/papers/">Papers</a></li>                            <li><a href="https://klab.lt/publications/posters/">Posters</a></li>                            <li><a href="https://klab.lt/publications/talks/">Talks</a></li>                            <li><a href="https://klab.lt/publications/figures/">Figures</a></li>                        </ul>
+                                            </li>                    <li>                        Education
+                        <ul>                            <li><a href="https://klab.lt/education/lectures/">Lectures</a></li>                        </ul>
+                                            </li>                    <li>                        About
+                        <ul>                            <li><a href="https://klab.lt/about/me/">Me</a></li>                            <li><a href="https://dl.dropboxusercontent.com/u/2498793/Kubilius-CV.pdf">My CV</a></li>                            <li><a href="https://klab.lt/about/media/">Media</a></li>                        </ul>
+                                            </li>                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">
+<div class="content">
+    <span class="pub-authors">
+        Jonas Kubilius
+    </span>
+
+    <h1>Summary of: Perceptual organization of two-dimensional patterns</h1>
+
+    <span class="pub-journal">
+        <a href="http://dx.doi.org/10.1037/0033-295X.107.4.677"></a>
+    </span>
+
+
+
+
+
+
+        <span class="pub-links">
+    </span>
+    <div class="article-content">
+         <p>In 2000, Geisler and Super proposed <a href="http://dx.doi.org/10.1037/0033-295X.107.4.677">a generic model for grouping two-dimensional patterns</a> (<a href="https://dl.dropboxusercontent.com/u/2498793/klab/Geisler_Super_2000_Perceptual_organization_of.pdf">pdf</a>), where observers see distinct regions based on grouping over a certain dimension (e.g., proximity in dot lattices, orientation differences for figures used by Victor Lamme and Pieter Roelfsema). Their simple algorithm manages to correctly group a wide variety of typical (textbook) Gestalt displays. However, for some reason this paper never got picked up (currently it has only 32 citations).</p>
+<h2>Background</h2>
+<p>Existing texture segregation models:</p>
+<ul>
+<li>Feature-based: extract features and cluster them</li>
+<li>Filter-based: apply a filter of size or orientation, then process by a non-linearity</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Segregation by shape: need to extract and use specific shapes, rather than features</li>
+<li>Nonstationary structures (ones that change smoothly and systematically, e.g., contour integration): need some form of texture integration</li>
+</ul>
+<h2>The model</h2>
+<p><strong>Step 1. *Receptive field matching to detect shape primitives</strong>*</p>
+<p><strong>Step 2. *The total grouping difference between each pair of primitives</strong>*</p>
+<p><em>Total grouping difference:</em> weighted sum of various dimensions. Relative strength of each grouping principle was measured using three stimuli, varying their properties and asking participants to indicate which two of them group together. Final weights:</p>
+<p>| <strong>Dimension</strong>  | <strong>Difference measure</strong>                         | <strong>Weight</strong>
+| -------------- | ---------------------------------------------- | ------------
+| Position       | sqrt((x_i-x_j)**2 + (y_i-y_j)**2)      | .147
+| Size           | |log(s_i/s_j)|                               | 1.490
+| Orientation    | |ori_i - ori_j|                              | .017
+| Shape (form)   | matching error after the best transformation   | .327
+| Symmetry       | 0 if symetric, 1 if not                        | -
+| Luminance      | |log(lum_i/lum_j)|                           | -
+| Contrast       | |log(contrast_i/contrast_j)|                 | -</p>
+<p><strong>Step 3. *Initial transitive or nontransitive grouping using binding criterion rules</strong>*</p>
+<ul>
+<li><em>The generalized uniqueness principle:</em> At any time and at any level in the hierarchy, a given object (part) can be assigned to only one superordinate object (whole).</li>
+<li><em>Transitive grouping:</em> Binding indirectly such that if A and B bind, B and C bind, then A and C bind even if their grouping strength is low.</li>
+<li><em>Nontransitive grouping:</em> Binding together of parts that share some common property or cluster of properties.</li>
+</ul>
+<p>To discover groups, a <em>binding criterion</em> must chosen, for example, using these rules:</p>
+<ul>
+<li><em>Stability:</em> groups must remain stable for a range of binding criterion values (local minima).</li>
+<li><em>Performance:</em> optimize performance in a given task.</li>
+<li><em>Recognition:</em> binding criterion should yield recognized objects or parts of objects.</li>
+</ul>
+<p><strong>Step 4. *Transformational matching</strong>*</p>
+<p>Find the best transformation between the groups found in Step 3. Difference is measured as the total normalized weighted Euclidean distance in the feature space between all pairs of points. Final difference is computed by finding the best transformation that minimizes this difference and applying a log, so that this difference zero or more. Objects can be transformed using:</p>
+<ul>
+<li>translation</li>
+<li>rotation</li>
+<li>scaling</li>
+<li>reflection</li>
+<li>luminance scaling</li>
+<li>contrast scaling</li>
+</ul>
+<p><em>Note:</em> A simple template matching is not good because perceptually similar shapes (a square and wiggly square) might produce a worse overlap than some perceptually dissimilar stimulus (like a triangle)). Alternatively, attribute matching could be used where properties of groups would be compared. This mechanism is not used in the model however<em>.</em></p>
+<p><strong>Step 5. *Transitive or nontransitive grouping using binding criterion rules</strong>*</p>
+<p>Repeat (4) and (5) for <em>multilevel grouping</em> where grouping occurs over higher-level structures. Multilevel grouping prefers groups with the smallest overall grouping error.</p>
+<p>[caption id=“attachment_710” align=“alignnone” width=“614”]<a href="http://klab.lt/wp-content/uploads/2013/09/multilevel.png"><img alt="Multilevel grouping" src="http://klab.lt/wp-content/uploads/2013/09/multilevel-1024x409.png" title="Multilevel grouping"></a> <strong>Multilevel grouping.</strong> Figures on the left are perceived as two I’s (with serifs) even though transitive grouping would bind parts as seen on the right. Panel on the right also demonstrates that the effect is not due to closure or other single-level grouping principles. Adapted from Fig. 5 in <a href="http://dx.doi.org/10.1037/0033-295X.107.4.677">Geisler &amp; Super (2000)</a>.[/caption]</p>     </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+                <footer>
+            (<a href="https://creativecommons.org/licenses/by/4.0/">cc-by</a>) 2012-2018 klab.lt &bull; source code available on <a href="https://github.com/qbilius/klab/" target="_blank">GitHub</a>
+        </footer>
+            </div>
+
+</body>
+</html>

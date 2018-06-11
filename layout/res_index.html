@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="grid-container content">
+    <h1 class="title">{{index.title}}</h1>
+    <div class="subtitle">
+        {% autoescape false %} {{index.subtitle}} {% endautoescape %}
+    </div>
+
+    <!--<div class="nav row">-->
+    <!--    {# set items = items|selectattr("categories", "equalto", category) #}-->
+    <!--    {% for item in items %}-->
+    <!--    <a href="#{{item.slug}}">-->
+    <!--        <div class="col col-2">-->
+    <!--            <img class="icon" src="item.icon">-->
+    <!--            <div class="icon-caption"><p>{{item.title}}</p></div>-->
+    <!--        </div>-->
+    <!--    </a>-->
+    <!--    {% endfor %}-->
+    <!--</div>-->
+
+    <div class="intro row">
+        {% autoescape false %} {{index.intro}} {% endautoescape %}
+    </div>
+
+    {% for item in items %}
+    <div class="row" id="{{item.slug}}">
+        <h1>{{item.title}}</h1>
+        <p>{% autoescape false %} {{item.html}} {% endautoescape %}</p>
+    </div>
+    {% endfor %}
+
+    <div class="end row">
+        {% autoescape false %} {{index.end}} {% endautoescape %}
+    </div>
+
+</div>
+
+<div class="clear"></div>
+{% endblock %}

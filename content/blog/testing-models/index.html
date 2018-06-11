@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<title>klab</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Jonas Kubilius">
+    <meta name="description" content="">
+    <meta name="keywords" content="mid-level vision, computer vision, human vision">
+    <meta name="google-site-verification" content="k1wISsyM_ADFRsWYOmwrowOMYSYu3MV5afsd-8B2AuQ" />
+    <meta content="Testing models" property="og:title" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css"/>
+	<link rel="stylesheet" href="https://klab.lt/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="https://klab.lt/favicon.ico" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <div class="logo-container">
+                <a href="https://klab.lt">
+                    <div class="logo"></div>
+                    <div class="logo-name">klab</div>
+                </a>
+                <div class="clear"></div>
+                <div class="tagline">&#34;What I cannot create, I do not understand.&#34; – R. Feynman</div>
+            </div>
+
+            <nav>
+                <ul>                    <li>                        <a href="https://klab.lt/blog/">Blog</a>
+                                            </li>                    <li>                        Publications
+                        <ul>                            <li><a href="https://klab.lt/publications/papers/">Papers</a></li>                            <li><a href="https://klab.lt/publications/posters/">Posters</a></li>                            <li><a href="https://klab.lt/publications/talks/">Talks</a></li>                            <li><a href="https://klab.lt/publications/figures/">Figures</a></li>                        </ul>
+                                            </li>                    <li>                        Education
+                        <ul>                            <li><a href="https://klab.lt/education/lectures/">Lectures</a></li>                        </ul>
+                                            </li>                    <li>                        About
+                        <ul>                            <li><a href="https://klab.lt/about/me/">Me</a></li>                            <li><a href="https://dl.dropboxusercontent.com/u/2498793/Kubilius-CV.pdf">My CV</a></li>                            <li><a href="https://klab.lt/about/media/">Media</a></li>                        </ul>
+                                            </li>                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">
+<div class="content">
+    <span class="pub-authors">
+        Jonas Kubilius
+    </span>
+
+    <h1>Testing models</h1>
+
+    <span class="pub-journal">
+             </span>
+
+
+
+
+
+
+        <span class="pub-links">
+    </span>
+    <div class="article-content">
+         <p>There seems to be a problem for testing any general purpose model of vision: how should one devise a task such that it would faithfully test model’s ability to process stimuli of interest? (Thanks to <a href="http://ppw.kuleuven.be/lbp/lbpMembers/u0029058">Hans</a> for pointing it out to me.) And if you fail to devise it properly, you may think you’re model is failing when it’s in fact well and sound.</p>
+<p>This problem does not exist with human observers. For example, suppose that you want to test if your model can tell a difference between x’s and o’s. How would you explain to it that this is its task? You can tell that to a human but not a computer.</p>
+<p>Of course, the problem is hardly new. You also cannot explain anything to a monkey, for example, yet people are able to train monkeys to do the task at hand. What happens is that monkeys somehow learn by trial and error what the experimenter wants them to do. That is a form of an unsupervised (or reinforcement) learning that happens in the brain. However, perhaps contrary to what it sounds like, such learning does not happen magically out of nowhere. There are certain learning rules hardwired to make this learning possible, such as <a href="http://en.wikipedia.org/wiki/Oja%27s_rule">Oja’s rule</a> (or <a href="http://en.wikipedia.org/wiki/Hebbian_theory">Hebbian learning</a> in neuroscience).</p>
+<p>Now the problem arises not because we cannot come up with a way for a model to come up with some classification but because there are so many tasks that a general purpose model of vision must be able to come up with a correct classification for each task. Suppose we have a task not unlike one we have in <a href="http://gestaltrevision.be/tests/lpost_consent.php">L-POST</a>. You are presented with a screen with one stimulus at a top and three at a bottom:</p>
+<p><span style="text-align:center; font-weight:bold;">O</span>
+<span style="text-align:center; font-weight:bold;">X T Q</span></p>
+<p>You’re asked to indicate which shape at the bottom matches best the one at the top. I suppose most people would choose ‘Q’. But now imagine I slightly change the stimuli:</p>
+<p><span style="text-align:center; font-weight:bold; color: #800000;">O</span>
+<span style="text-align:center; font-weight:bold;"><span style="color: #800000;">X</span> <span style="color: #000080;">T</span> <span style="color: #003300;">Q</span></span></p>
+<p>I would guess most people would now go for ‘X’. But how would a model know? It should somehow take it into account that the colors of ‘O’ and ‘X’ match while ‘T’ and ‘Q’ have some other colors and it should also know that color is more important to the visual system than shape. The latter is my responsiblity and the former is not difficult to implement… except that when you think about all different tasks that are out there. This would amount to implementing basic cognitive reasoning which is first of all difficult and moreover not a part of visual cognition which I am here trying to address.</p>
+<p>For the moment, I do not know a good answer. <a href="http://dx.doi.org/10.1073/pnas.0700622104">Serre et al. (2007)</a> tune their model to their one task at hand and given that the model works, they don’t have to worry. <a href="http://dx.doi.org/10.1073/pnas.1109168108">Fleuret et al. (2011)</a> show that their model is failing but then again their point is to show that the model is performing poorly. So my solution for now is to simply build in the various tasks that I need to test the model.</p>     </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+                <footer>
+            (<a href="https://creativecommons.org/licenses/by/4.0/">cc-by</a>) 2012-2018 klab.lt &bull; source code available on <a href="https://github.com/qbilius/klab/" target="_blank">GitHub</a>
+        </footer>
+            </div>
+
+</body>
+</html>

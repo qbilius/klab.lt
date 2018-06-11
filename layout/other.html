@@ -1,0 +1,16 @@
+{% set other = {} %}
+{% for name in item.keys() %}
+    {% if 'other' in name%}
+        {% if 'link' not in name %}
+            {% other[name] = item.get(name + '_link') %}
+        {% endif %}
+    {% endif %}
+{% endfpr %}
+        
+{% if len(other) > 0 %}
+    <ul class="other-box">
+        {% for name, href in other.items() %}
+            <li><a href="{{href}}">name</li>
+        {% endfor %}
+    </ul>
+{% endif %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="content">
+    <span class="pub-authors">
+        {{item.authors}}
+    </span>
+
+    <h1>{{item.title}}</h1>
+
+    {% include 'meta.html' with context %}
+    {% include 'links.html' with context %}
+
+    <div class="article-content">
+        {% autoescape false %} {{item.html}} {% endautoescape %}
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+{% endblock %}

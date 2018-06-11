@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<title>klab</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Jonas Kubilius">
+    <meta name="description" content="">
+    <meta name="keywords" content="mid-level vision, computer vision, human vision">
+    <meta name="google-site-verification" content="k1wISsyM_ADFRsWYOmwrowOMYSYu3MV5afsd-8B2AuQ" />
+    <meta content="Review of: Could a neuroscientist understand a microprocessor?" property="og:title" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css"/>
+	<link rel="stylesheet" href="https://klab.lt/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="https://klab.lt/favicon.ico" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <header>
+            <div class="logo-container">
+                <a href="https://klab.lt">
+                    <div class="logo"></div>
+                    <div class="logo-name">klab</div>
+                </a>
+                <div class="clear"></div>
+                <div class="tagline">&#34;What I cannot create, I do not understand.&#34; – R. Feynman</div>
+            </div>
+
+            <nav>
+                <ul>                    <li>                        <a href="https://klab.lt/blog/">Blog</a>
+                                            </li>                    <li>                        Publications
+                        <ul>                            <li><a href="https://klab.lt/publications/papers/">Papers</a></li>                            <li><a href="https://klab.lt/publications/posters/">Posters</a></li>                            <li><a href="https://klab.lt/publications/talks/">Talks</a></li>                            <li><a href="https://klab.lt/publications/figures/">Figures</a></li>                        </ul>
+                                            </li>                    <li>                        Education
+                        <ul>                            <li><a href="https://klab.lt/education/lectures/">Lectures</a></li>                        </ul>
+                                            </li>                    <li>                        About
+                        <ul>                            <li><a href="https://klab.lt/about/me/">Me</a></li>                            <li><a href="https://dl.dropboxusercontent.com/u/2498793/Kubilius-CV.pdf">My CV</a></li>                            <li><a href="https://klab.lt/about/media/">Media</a></li>                        </ul>
+                                            </li>                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">
+<div class="content">
+    <span class="pub-authors">
+        Jonas Kubilius
+    </span>
+
+    <h1>Review of: Could a neuroscientist understand a microprocessor?</h1>
+
+    <span class="pub-journal">
+        <a href="http://biorxiv.org/content/early/2016/05/26/055624"></a>
+    </span>
+
+
+    <span class="datea">, 2016-06-10</span>
+
+
+
+
+        <span class="pub-links">
+    </span>
+    <div class="article-content">
+         <p>The motto of this website quotes Richard Feynman's famous "What I cannot create, I do not understand.", which, to be honest, I was very proud to come across until learning years later that basically everyone else knew this quote and many people shared a similar belief. So here we are, experiment by experiment gaining insights into the functioning of the brain and implicitly or explicitly reverse engineering it.</p>
+<p>But <a href="http://biorxiv.org/content/early/2016/05/26/055624">in their recent paper</a>, Eric Jonas and Konrad Kording question whether neuroscientists are at all on the right track to the understanding of our brain. By applying standard neuroscience tools to a microprocessor, they demonstrate how surprisingly uninformative these techniques are. Six experiments – and yet nothing learned about the principles of a microprocessor.</p>
+<p>The implications, if we consider these experiments a good representation of how neuroscientists approach understanding the brain, are serious in the era of big data and the general messing around doing random studies and claiming that somehow we're learning something useful about the brain.</p>
+<p>So is the paper making a strong case against the current techniques? Upon a discussion at our journal club at DiCarlo lab, several key critical points were raised:</p>
+<ol>
+<li>
+<p>We <em>could</em> understand microprocessor if we really wanted to. We would use different tools than in neuroscience because early on we would observe much more regularity in the circuits than we see in the brain, and we also have much better-grounded theories that would drive our hypotheses and experiments. But in terms of understanding the brain, we don't even have a good idea what to look for and the brain is much more messy, so the techniques are different and do not transfer to microprocessor understanding. Perhaps a better analogy would be an <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a> – could we understand it at all if we knew nothing about it, even with the appropriate tools for the task?</p>
+</li>
+<li>
+<p>But it doesn't seem that the authors even tried seriously to understand microprocessor even with the neuroscience tools at hand. None of the experiments seemed to tap into trying to understand circuits at a local level (for instance, the AND gate). Rather, the experiments were more like poking with a stick somewhere, showing some spurious effect and not trying to refine it further. In neuroscience, we wouldn't stop with a single observation and a single analysis but would continue asking how specific these observations are. Perhaps behaviors (booting games) was not the best approximation to the specificity of behaviors usually used in neuroscience. Though the authors point seems valid in the era of "let's map everything" without trying to relate to different levels of the system (e.g., functional / behavioral).</p>
+</li>
+<li>
+<p>What does it even mean to <strong>understand</strong> a system? Build from scratch? Fix it? Or do we want to produce wiring diagrams shown in Figure 2? Or do we mean the functional role of various components? In other words, when Feynman says "create", what does he specifically mean? This point was not addressed in the paper, assuming instead that we know what understanding is. But if the success is not defined, how do we know if we achieved it?</p>
+</li>
+<li>
+<p>One proxy for understanding (and that's a more general note) is how well we can <strong>predict</strong> system's behavior. Now a lot of people have an issue with that because they feel there is also a need for <strong>parsimony</strong>, that is, simpler models are better. But how do we measure this parsimony? Is a model a good one if you can predict it's behavior in your head? But not everything is reducible to simple principles. Some systems are complex. Short description length? Well, our favorite deep nets can be specified with very simple instructions yet many people claim they don't understand them. So predictability seems to be an objective measure whereas parsimony is more subjective and should come only later (after we can predict the system very well). Note though that when we talk about predictability, we mean particular instantiations of models, not just classes of models that keep expanding with new data and thus are not falsifiable ("sponge models").</p>
+</li>
+</ol>     </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+                <footer>
+            (<a href="https://creativecommons.org/licenses/by/4.0/">cc-by</a>) 2012-2018 klab.lt &bull; source code available on <a href="https://github.com/qbilius/klab/" target="_blank">GitHub</a>
+        </footer>
+            </div>
+
+</body>
+</html>

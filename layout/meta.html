@@ -1,0 +1,53 @@
+<span class="pub-journal">
+    {% set no_where=False %}
+    {% if item.journal_link is defined %}<a href="{{item.journal_link}}">{{item.journal}}</a>
+    {% elif item.conference_link is defined %}<a href="{{item.conference_link}}">{{item.conference}}</a>
+    {% elif item.event_link is defined %}<a href="{{item.event_link}}">{{item.event}}</a>
+    {% elif item.where_link is defined %}<a href="{{item.where_link}}">{{item.where}}</a>
+    {% elif item.reviewof_link is defined %}<a href="{{item.reviewof_link}}">{{item.review}}</a>
+    {% elif item.journal is defined %} {{item.journal}}
+    {% elif item.conference is defined %} {{item.conference}}
+    {% elif item.event is defined %} {{item.event}}
+    {% elif item.where is defined %} {{item.where}}
+    {% elif item.reviewof is defined %} {{item.reviewof}}
+    {% else %} {% set no_where=True %}
+    {% endif %}
+</span>
+
+{% if item.location is defined %}
+    {% if not no_where %}, {% endif %}
+    <span class="pub-loc">
+        {% if item.location_link is defined %}<a href="{{item.location_link}}">{{item.location}}</a>
+        {% else %}{{item.location}}
+        {% endif %}
+    </span>
+{% elif item.venue is defined %}
+    {% if not no_where %}, {% endif %}
+    <span class="pub-loc">
+        {% if item.venue_link is defined %}<a href="{{item.venue_link}}">{{item.venue}}</a>
+        {% else %} {{item.venue}}
+        {% endif %}
+    </span>
+{% endif %}
+
+{% if item.date is defined %}
+    <span class="datea">, {{item.date}}</span>
+{% endif %}
+
+{% if item.volume is defined %}
+    <span class="pub-volume">, {{item.volume}}</span>
+{% endif %}
+
+{% if item.issue is defined %}
+    <span class="pub-issue">({{item.issue}})</span>
+{% endif %}
+
+{% if item.pages is defined %}
+    <span class="pub-pages">, {{item.pages}}</span>
+{% endif %}
+
+{% if item.status is defined %}
+    {% if item.status != 'published' %}
+        <span class="pub-status">({{item.status}})</span>
+    {% endif %}
+{% endif %}
