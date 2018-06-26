@@ -5,7 +5,7 @@ journal: biorxiv
 year: 2018
 categories: Papers
 links:
-    doi: https://doi.org/10.1101/354753
+    doi: 10.1101/354753
     Cosyne 2017 poster: https://klab.lt/publications/posters/2017-cosyne-ko/
     SfN 2017 talk: https://klab.lt/publications/talks/2017-sfn-ko/
 ---
