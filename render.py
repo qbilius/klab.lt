@@ -246,7 +246,7 @@ def render_index(selector, path):
         if not args.deploy:  # pdiff has index.html part
             pdiff = os.path.dirname(pdiff)
         for name, href in item['links'].items():
-            if not href.startswith('http://') and not href.startswith('https://'):
+            if not href.startswith('http://') and not href.startswith('https://') and name != 'doi':
                 item['links'][name] = pdiff + '/' + href
     template = env.get_template('cat_index.html')
     output = template.render(items=selposts,

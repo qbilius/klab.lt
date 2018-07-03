@@ -1,7 +1,7 @@
 <span class="pub-links">
     {% for name, href in item.links.items() %}
-      {% if name=='doi' %}
-          <a href="http://doi.org/{{item.links['doi']}}">
+      {% if name == 'doi' %}
+          <a href="https://doi.org/{{item.links['doi']}}">
               {% if 'Papers' in item.categories %}article
               {% elif 'Posters' in item.categories or 'Talks' in item.categories %}abstract
               {% elif 'Figures' in item.categories %}figure
