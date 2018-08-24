@@ -1,10 +1,10 @@
 ---
 title: autoart
 authors: Jonas Kubilius
-year: 2014
+year: 2013
 venue: Art in Science
 categories: Machine Art
-datestamp: 2018-08-24 18:47:15
+datestamp: 2013-09-26 18:30:00
 ---
 
 <figure style="float:left">

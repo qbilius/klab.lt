@@ -4,7 +4,7 @@ authors: sngan_projection, Jonas Kubilius
 year: 2018
 venue: 16th International Architecture Exhibition---La Biennale di Venezia
 categories: Machine Art
-datestamp: 2018-08-24 16:44:51
+datestamp: 2018-05-26 12:00:00
 ---
 
 <img src="130_church_goldfish.jpg" width="210px" style="float:left;padding-right:15px"/>
