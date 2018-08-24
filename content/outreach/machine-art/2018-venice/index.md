@@ -7,8 +7,6 @@ categories: Machine Art
 datestamp: 2018-08-24 16:44:51
 ---
 
-<meta property="og:image" content="130_church_goldfish.jpg" />
-
 <img src="130_church_goldfish.jpg" width="210px" style="float:left;padding-right:15px"/>
 
 I have long been inspired by the beautiful symbiotic imagery in the verses of Richard Brautigan’s *All Watched Over by Machines of Loving Grace* (1967):
