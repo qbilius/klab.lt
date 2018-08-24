@@ -30,10 +30,11 @@ nav = [('Blog', []),
             'Figures',
             # 'Software',
             ]),
-       ('Education', [
+       ('Outreach', [
             # ('Python for Vision Research',
             #  'http://nbviewer.ipython.org/github/gestaltrevision/python_for_visres/blob/master/index.ipynb'),
             'Lectures',
+            'Machine Art'
             ]),
        ('About', [
             'Me',
