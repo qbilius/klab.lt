@@ -1,5 +1,5 @@
 ---
-title: Can Deep Neural Networks Rival Human Ability to Generalize in Core Object Recognition?
+title: Can deep neural networks rival human ability to generalize in core object recognition?
 authors: Jonas Kubilius*, Kohitij Kar*, Kailyn Schmidt, James J. DiCarlo
 conference: CCN
 date: 2018-09-06 16:30
