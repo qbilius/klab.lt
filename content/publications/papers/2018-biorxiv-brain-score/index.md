@@ -1,11 +1,9 @@
 ---
 title: Brain-Score: Which Artificial Neural Network for Object Recognition is most Brain-Like?
-authors: Jonas Kubilius, Martin Schrimpf, Aran Nayebi, Daniel Bear, Daniel L. K. Yamins, James J. DiCarlo
+authors: Martin Schrimpf, Jonas Kubilius, Ha Hong, Najib J. Majaj, Rishi Rajalingham, Elias B. Issa, Kohitij Kar, Pouya Bashivan, Jonathan Prescott-Roy, Kailyn Schmidt, Daniel L. K. Yamins, and James J. DiCarlo
 journal: biorxiv
 year: 2018
 categories: Papers
-links:
-    doi: #
 datestamp: 2018-09-04 17:00:00
 ---
 
