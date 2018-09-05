@@ -7,6 +7,7 @@ categories: Posters
 links:
     url: https://ccneuro.org/2018/Papers/ViewPapers.asp?PaperNum=1234
     paper: cnn_2018_submission.pdf
+    poster: kubilius_kar_ccn2018_small.pdf
 datestamp: 2018-09-06 16:30
 ---
 
