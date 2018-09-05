@@ -1,6 +1,6 @@
 ---
 title: CORnet: Modeling the Neural Mechanisms of Core Object Recognition
-authors: Jonas Kubilius, Martin Schrimpf, Aran Nayebi, Daniel Bear, Daniel L. K. Yamins, James J. DiCarlo
+authors: Jonas Kubilius*, Martin Schrimpf*, Aran Nayebi, Daniel Bear, Daniel L. K. Yamins, James J. DiCarlo
 journal: biorxiv
 year: 2018
 categories: Papers
