@@ -2,12 +2,13 @@
 title: Convolutional recurrent neural network models of dynamics in higher visual cortex
 authors: Aran Nayebi, Jonas Kubilius, Daniel Bear, Surya Ganguli, James J. DiCarlo, Daniel L. K. Yamins
 conference: VSS
-location: St. Pete Beach, FL, USA
+location: St. Pete Beach (FL, USA)
 date: 2018-05-21 08:15:00
 categories: Talks
 duration: 15 min
 links:
     url: http://visionsciences1.org/vss_public/core_routines/view_abstract_no.php?show_close_window=yes&abstractno=1081
+    Cosyne 2018: https://klab.lt/publications/posters/2018-cosyne/
 datestamp: 2018-03-16 11:49:45
 ---
 

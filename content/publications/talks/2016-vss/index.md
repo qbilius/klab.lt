@@ -4,6 +4,7 @@ authors: Jonas Kubilius, Stefania Bracci, Hans P. Op de Beeck
 conference: VSS
 date: 2016-05-16 09:30
 categories: Talks
+location: St. Pete Beach (FL, USA)
 duration: 15 min
 datestamp: 2015-02-10 01:00:00
 links:

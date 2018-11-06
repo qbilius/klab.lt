@@ -3,6 +3,7 @@ title: Deep learning accelerating our understanding of human intelligence
 authors: Jonas Kubilius
 conference: Vita Scientia
 conference_link: http://www.vitascientia.lt
+location: Vilnius (Lithuania)
 date: 2018-01-03 13:10
 categories: Talks
 duration: 50 min

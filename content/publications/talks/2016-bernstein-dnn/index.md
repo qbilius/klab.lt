@@ -4,6 +4,7 @@ authors: Jonas Kubilius
 conference: Bernstein Satellite Workshop: Deep neural networks: a new tool for understanding the brain
 date: 2016-09-21 11:00
 categories: Talks
+location: Berlin (Germany)
 duration: 40 min
 links:
     url: http://www.nncn.de/en/bernstein-conference/2016/satellite-workshops/deep-neural-networks-a-new-tool-for-understanding-the-brain-bethge-brendel

@@ -5,7 +5,7 @@ year: 2013
 categories: Figures
 datestamp: 2013-07-26 07:36:31
 links:
-    doi: m9.figshare.751548
+    doi: 10.6084/m9.figshare.751548
 ---
 
 Want to do share your research today? Find the best tools available today (July 2013) for each step of the typical research cycle!

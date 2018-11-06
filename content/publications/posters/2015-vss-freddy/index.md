@@ -2,6 +2,7 @@
 title: The occipital place area represents the local elements of scenes
 authors: Frederik Kamps, Joshua B. Julian, Jonas Kubilius, Nancy Kanwisher, Daniel D. Dilks
 conference: VSS
+location: St. Pete Beach (FL, USA)
 date: 2015-05-17 08:30:00
 categories: Posters
 datestamp: 2015-04-30 10:18:21

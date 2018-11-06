@@ -4,6 +4,7 @@ authors: Jonas Kubilius, Johan Wagemans, Hans P. Op de Beeck
 conference: MODVIS
 date: 2015-05-14 14:25
 categories: Talks
+location: St. Pete Beach (FL, USA)
 duration: 25 min
 datestamp: 2015-04-30 09:01:42
 links:

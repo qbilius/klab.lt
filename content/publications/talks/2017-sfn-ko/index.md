@@ -2,11 +2,13 @@
 title: Does the primate ventral stream need cortical feedback to compute rapid online image-by-image object identity?
 authors: Kohitij Kar, Jonas Kubilius, Elias B. Issa, Kailyn Schmidt, James J. DiCarlo
 conference: SfN
+location: Washington, DC (USA)
 date: 2017-11-13 08:00
 categories: Talks
 duration: 15 min
 links:
     program link: http://www.abstractsonline.com/pp8/#!/4376/presentation/34664
+    Cosyne 2017: https://klab.lt/publications/posters/2017-cosyne-ko/
 datestamp: 2017-12-22 08:28:11
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Predict, then simplify
 authors: Jonas Kubilius
-journal: NeuroImage (in press)
+journal: NeuroImage
 year: 2018
 categories: Papers
 links:

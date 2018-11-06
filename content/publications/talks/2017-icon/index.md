@@ -4,6 +4,7 @@ authors: Jonas Kubilius, Kohitij Kar, Daniel L. K. Yamins, James J. DiCarlo
 conference: ICON
 date: 2017-08-08 15:00
 categories: Talks
+location: Amsterdam (The Netherlands)
 duration: 30 min
 links:
     url: http://www.icon2017.org/program.html

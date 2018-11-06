@@ -2,6 +2,7 @@
 title: Evidence that feedback is required for object identity inferences computed by the ventral stream
 authors: Kohitij Kar, Jonas Kubilius, Elias Issa, Kailyn Schmidt, James J. DiCarlo
 conference: Cosyne
+location: Salt Lake City (UT, USA)
 date: 2017-02-23 08:30:00
 categories: Posters
 links:

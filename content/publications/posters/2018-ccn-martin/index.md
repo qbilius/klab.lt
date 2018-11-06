@@ -2,6 +2,7 @@
 title: Brain-Score: Which Artificial Neural Network Best Emulates the Brain’s Neural Network?
 authors: Martin Schrimpf*, Jonas Kubilius*, James J. DiCarlo
 conference: CCN
+location: Philadelphia (PA, USA)
 date: 2018-09-07 19:30
 duration: 1:45
 categories: Posters

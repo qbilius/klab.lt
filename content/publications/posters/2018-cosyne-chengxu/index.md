@@ -2,6 +2,7 @@
 title: The virtual rat: Building a computational model of the rodent whisker trigeminal system
 authors: Chengxu Zhuang, Nadina Zweifel, Jonas Kubilius, Mitra J. Z. Hartmann, Daniel L. K. Yamins
 conference: Cosyne
+location: Denver (CO, USA)
 date: 2018-03-01
 categories: Posters
 links:

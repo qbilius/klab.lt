@@ -2,6 +2,7 @@
 title: Convolutional recurrent neural network models of dynamics in higher visual cortex
 authors: Aran Nayebi*, Jonas Kubilius*, Daniel Bear, Surya Ganguli, James J. DiCarlo, Daniel L. K. Yamins
 conference: Cosyne
+location: Denver (CO, USA)
 date: 2018-03-01
 categories: Posters
 links:
