@@ -3,7 +3,7 @@ title: The Swamp Intelligence
 authors: sngan_projection, Jonas Kubilius
 year: 2018
 venue: 16th International Architecture Exhibition---La Biennale di Venezia
-categories: Machine Art
+categories: Machine art
 datestamp: 2018-05-26 12:00:00
 ---
 

@@ -5,7 +5,7 @@ event: PhD defence
 event_link: https://www.kuleuven.be/doctoraatsverdediging/fiches/3H10/3H100431.htm
 venue: Promotiezaal (00.14), KU Leuven (Belgium)
 venue_link: https://www.kuleuven.be/lokalen/50074848.htm
-categories: Lectures
+categories: Lab meetings
 datestamp: 2015-05-03 18:20:12
 links:
     thesis: https://lirias.kuleuven.be/bitstream/123456789/495400/1/dissertation.pdf

@@ -3,7 +3,7 @@ title: Deep nets as a computational model for human shape sensitivity
 where: Cox lab (Harvard)
 location: Cambridge, MA (USA)
 date: 2015-05-22
-categories: Talks
+categories: Lab meetings
 datestamp: 2015-07-29 10:19:14
 links:
     slides: slides.html

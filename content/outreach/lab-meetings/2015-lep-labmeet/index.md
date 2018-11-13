@@ -3,7 +3,7 @@ title: Understanding and improving deep neural nets
 date: 2015-09-25 14:00:00
 event: LEP lab meeting
 venue: PSI 01.07, KU Leuven (Belgium)
-categories: Lectures
+categories: Lab meetings
 datestamp: 2015-09-21 11:42:09
 ---
 

@@ -4,7 +4,7 @@ authors: Jonas Kubilius, Johan Wagemans, Hans P. Op de Beeck
 where: Roelfsema lab (NIN)
 location: Amsterdam (The Netherlands)
 date: 2013-12-02
-categories: Talks
+categories: Lab meetings
 datestamp: 2013-12-02 11:45:26
 links:
     slides: https://dl.dropboxusercontent.com/u/2498793/klab/gmin_lep_retreat_2014.svg

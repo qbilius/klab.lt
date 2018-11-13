@@ -3,7 +3,7 @@ title: Deep learning for understanding human vision
 where: HOP lab (KU Leuven)
 location: Leuven (Belgium)
 date: 2018-11-13
-categories: Talks
+categories: Lab meetings
 links:
     slides: slides.html
 ---

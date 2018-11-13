@@ -3,7 +3,7 @@ title: What mid-level vision does and other experiments with deep architectures
 date: 2015-04-21 14:00:00
 event: LEP seminar
 venue: PSI 00.14, KU Leuven (Belgium)
-categories: Lectures
+categories: Lab meetings
 datestamp: 2015-04-14 23:08:04
 ---
 

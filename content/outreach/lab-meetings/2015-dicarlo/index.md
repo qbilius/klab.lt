@@ -3,7 +3,7 @@ title: Deep nets as a computational model for human shape sensitivity
 where: DiCarlo lab (MIT)
 location: Cambridge, MA (USA)
 date: 2015-05-27
-categories: Talks
+categories: Lab meetings
 datestamp: 2015-07-29 10:17:24
 links:
     slides: slides.html

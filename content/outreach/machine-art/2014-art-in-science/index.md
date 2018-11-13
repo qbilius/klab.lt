@@ -3,7 +3,7 @@ title: autoart
 authors: Jonas Kubilius
 year: 2013
 venue: Art in Science
-categories: Machine Art
+categories: Machine art
 datestamp: 2013-09-26 18:30:00
 ---
 
