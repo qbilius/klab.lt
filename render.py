@@ -33,7 +33,7 @@ nav = [('Blog', []),
        ('Outreach', [
             # ('Python for Vision Research',
             #  'http://nbviewer.ipython.org/github/gestaltrevision/python_for_visres/blob/master/index.ipynb'),
-            'Lab meetings'
+            'Lab meetings',
             'Lectures',
             'Machine art'
             ]),
