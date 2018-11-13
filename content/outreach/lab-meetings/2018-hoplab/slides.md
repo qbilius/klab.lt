@@ -345,12 +345,6 @@ class: center, middle
 Let's keep training on ImageNet and we'll get to 100% explained variance?
 
 ---
-class: center, middle
-
-<iframe src="http://www.brain-score.org" width="800" height="600" frameborder="0"></iframe>
-
-
----
 class: middle
 
 # Part 3.1: Recurrence Matters
@@ -416,7 +410,7 @@ class: center, middle
 
 ## Idea: Use deeper models
 
-.img100[![](img/early/network_sizes.png)]
+.img100[![](img/tnn/network_sizes.png)]
 
 *(approximate sizes)*
 
