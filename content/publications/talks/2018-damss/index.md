@@ -6,6 +6,8 @@ conference_link: https://www.mii.lt/DAMSS/
 location: Druskininkai (Lithuania)
 date: 2018-11-30
 categories: Talks
+links:
+    slides: slides.html
 datestamp: 2018-11-05 16:57:20
 ---
 

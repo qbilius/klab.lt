@@ -5,7 +5,8 @@ journal: NIPS (poster)
 year: 2018
 categories: Papers
 links:
-    arXiv: https://arxiv.org/abs/1807.00053
+    website+poster: https://neuroailab.github.io/convrnns/
+    paper: https://arxiv.org/abs/1807.00053
     Cosyne 2018 poster: https://klab.lt/publications/posters/2018-cosyne/
     VSS 2018 talk: https://klab.lt/publications/talks/2018-vss/
 datestamp: 2018-06-20 20:27:23
