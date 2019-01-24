@@ -1,4 +1,4 @@
-class: center
+class: center, middle
 
 # Apie dirbtinį intelektą
 
