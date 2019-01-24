@@ -2,6 +2,7 @@
 title: Apie dirbtinį intelektą
 date: 2019-01-25 10:00:00
 duration: 1.5 hours
+event: Vieša paskaita
 event_link: https://www.smm.lt/web/lt/renginiai/savaitesrenginiai/jono-kubiliaus-paskaita-apie-dirbtini-intelekta
 venue: Kolegijų salė, Švietimo, mokslo ir sporto ministerija, A. Volano g. 2, Vilnius (Lithuania)
 venue_link: https://goo.gl/maps/L9NJEkc5XTp
