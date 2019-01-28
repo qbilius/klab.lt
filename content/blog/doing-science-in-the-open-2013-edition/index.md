@@ -124,7 +124,7 @@ Since 2008, NIH-funded scientists are [required to submit their manuscripts](htt
 
 -   LaTeX-based
 -   Can include Python code for an automatic figure generation
--   [demo](http://www.youtube.com/watch?v=yIO4l0zHGjw)<span style="font-size: 13px;"> </span>
+-   [demo](https://www.youtube.com/watch?v=yIO4l0zHGjw)<span style="font-size: 13px;"> </span>
 
 If you still prefer Word documents, at least stop sending multiple versions around. [**Dropbox**](https://www.dropbox.com/) is your true friend:
 

@@ -9,7 +9,7 @@ categories: Lectures
 datestamp: 2012-10-06 18:00:37
 links:
     slides: http://www.slideshare.net/qbilius/kubilius-stupid-machinestedxwithurls-15628922
-    video: http://www.youtube.com/watch?v=uYgQClEfYuI
+    video: https://www.youtube.com/watch?v=uYgQClEfYuI
 ---
 
 A young company called [*Kiva Systems*](http://www.kivasystems.com/) has solved a difficult problem. If you were in a large business of selling items online, such as *Amazon*, you’d probably have a large warehouse where you store your stuff. In order to fulfill and order, a worker would have to find an appropriate shelf, pick the item, and ship it. If you were really serious, you might stuff your warehouse with conveyor belts to speed up the process. Needless to say, this is very expensive and still not that much efficient.
