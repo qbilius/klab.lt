@@ -1,11 +1,11 @@
 ---
 title: Evidence that recurrent circuits are critical to the ventral stream's execution of core object recognition behavior
 authors: Kohitij Kar, Jonas Kubilius, Kailyn M. Schmidt, Elias B. Issa, James J. DiCarlo
-journal: biorxiv
-year: 2018
+journal: Nature Neuroscience
+year: 2019
 categories: Papers
 links:
-    doi: 10.1101/354753
+    biorxiv: 10.1101/354753
     Cosyne 2017 poster: https://klab.lt/publications/posters/2017-cosyne-ko/
     SfN 2017 talk: https://klab.lt/publications/talks/2017-sfn-ko/
 datestamp: 2018-06-26 00:00:00
