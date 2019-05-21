@@ -5,6 +5,7 @@ journal: Nature Neuroscience
 year: 2019
 categories: Papers
 links:
+    article: 10.1038/s41593-019-0392-5
     biorxiv: 10.1101/354753
     Cosyne 2017 poster: https://klab.lt/publications/posters/2017-cosyne-ko/
     SfN 2017 talk: https://klab.lt/publications/talks/2017-sfn-ko/
