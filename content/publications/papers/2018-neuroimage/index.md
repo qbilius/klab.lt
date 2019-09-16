@@ -3,6 +3,8 @@ title: Predict, then simplify
 authors: Jonas Kubilius
 journal: NeuroImage
 year: 2018
+volume: 180
+pages: 110-111
 categories: Papers
 links:
     doi: 10.1016/j.neuroimage.2017.12.006

@@ -6,7 +6,7 @@ year: 2017
 categories: Papers
 links:
     arXiv: https://arxiv.org/abs/1706.07555
-    NIPS 2017: https://papers.nips.cc/paper/6849-toward-goal-driven-neural-network-models-for-the-rodent-whisker-trigeminal-system
+    NIPS version: https://papers.nips.cc/paper/6849-toward-goal-driven-neural-network-models-for-the-rodent-whisker-trigeminal-system
 datestamp: 2017-06-23 03:34:03
 ---
 

@@ -3,10 +3,12 @@ title: Evidence that recurrent circuits are critical to the ventral stream's exe
 authors: Kohitij Kar, Jonas Kubilius, Kailyn M. Schmidt, Elias B. Issa, James J. DiCarlo
 journal: Nature Neuroscience
 year: 2019
+volume: 22
+pages: 974-983
 categories: Papers
 links:
     doi: 10.1038/s41593-019-0392-5
-    biorxiv: https://doi.org/10.1101/354753
+    bioRxiv: https://doi.org/10.1101/354753
     Cosyne 2017 poster: https://klab.lt/publications/posters/2017-cosyne-ko/
     SfN 2017 talk: https://klab.lt/publications/talks/2017-sfn-ko/
 datestamp: 2018-06-26 00:00:00
