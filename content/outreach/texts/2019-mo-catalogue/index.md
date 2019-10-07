@@ -3,6 +3,8 @@ title: Teužgimsta dirbtinis intelektas
 authors: Jonas Kubilius
 where: „Gyvūnas – žmogus – robotas“ parodos leidinys
 year: 2019
+categories: Texts
+datestamp: 2019-04-06 00:00:00
 ---
 
 Jūs turite sielą? Turbūt nemalonu būtų prisipažinti, kad ne. Kaipgi žmogus be sielos, sielos labai reikia. Kam? Vienas įtikinamesnių atsakymų turbūt pateikiamas René Descartesʼo filosofijoje, kad kūnas be sielos negeba protauti. Bet kai Alanas Turingas, Alonzas Churchas ir kiti mokslininkai XX a. pirmojoje pusėje suformulavo algoritmų teoriją, atsirado matematinis pagrindas, jog kompiuteris yra visiškai tinkamas simuliuoti loginio mąstymo procesus. Pavyzdžiui, norint įrodyti matematinę teoremą, užtenka kompiuterio programai žingsnis po žingsnio bandyti kaip nors keisti simbolius turimame matematiniame reiškinyje – tarsi labirinte ieškotume kelio,– kol pasiekiamas tikslas, t. y. toks reiškinys, kurį ir reikėjo įrodyti. Jei viename kelyje įstringama ir programa toliau pasistūmėti negali, ji grįžta kelis žingsnius atgal ir bando kitą kelią, šitaip iš principo tiesiog tikrindama visas įmanomas kombinacijas ar bent dalį jų. Dar 1956 m. sukurta kompiuterio programa „Loginis teoretikas“ jau sugebėjo įrodyti dalį matematinių teoremų, o pati idėja, kad loginis samprotavimas tėra gudrus paieškos algoritmas, tapo viena kertinių dirbtinio intelekto paradigmų, sėkmingai išnaudotų siekiant nugalėti žmones įvairiuose žaidimuose. Geriausiai žinomas pavyzdys turbūt buvo 1997 m. sistemos „Deep Blue“ pergalė prieš tuometinį pasaulio šachmatų čempioną Garį Kasparovą – sistema labai sparčiai atliko galimų ėjimų paiešką ir įvertinimą, kuris jų būtų palankiausias.
