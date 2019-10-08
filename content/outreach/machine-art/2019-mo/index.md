@@ -12,6 +12,8 @@ datestamp: 2019-04-06 00:00:00
 links:
     gidas lietuviškai: https://gidas.mo.lt/turai/issamus-gidas-po-paroda-gyvunas-zmogus-robotas/pelkiu-intelektas-2018/
     guide in English: https://gidas.mo.lt/en/turai/animal-human-robot-extended-tour/swamp-intellect-2018/
+    7md: https://www.7md.lt/tarp_disciplinu/2019-06-28/Kuriantis-zmogus-tarp-gyvuno-ir-algoritmo
+    SwO maganize: https://www.swo.lt/ar-gyvunas-ir-dirbtinis-intelektas-gali-buti-menininkai/
 ---
 
 <img src="swamp-1.jpg" width="300px" style="float:left;padding-right:15px"/>

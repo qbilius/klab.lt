@@ -36,7 +36,8 @@ nav = [('Blog', []),
             'Lab meetings',
             'Lectures',
             'Texts',
-            'Machine art'
+            'Machine art',
+            'Other events'
             ]),
        ('About', [
             'Me',
