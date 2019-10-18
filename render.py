@@ -41,7 +41,7 @@ nav = [('Blog', []),
             ]),
        ('About', [
             'Me',
-            ('My CV', 'https://dl.dropboxusercontent.com/u/2498793/Kubilius-CV.pdf'),
+            ('My CV', 'https://www.dropbox.com/s/7y9bnt6y0ag8t1r/Kubilius-CV.pdf?dl=0'),
             'Media'
             ])
         ]
