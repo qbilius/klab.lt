@@ -4,8 +4,9 @@ authors: Jonas Kubilius*, Kohitij Kar*, Kailyn Schmidt, James J. DiCarlo
 conference: CCN
 location: Philadelphia (PA, USA)
 date: 2018-09-06 16:30
-categories: Posters
+categories: Posters, Papers
 links:
+    doi: 10.32470/CCN.2018.1234-0
     url: https://ccneuro.org/2018/Papers/ViewPapers.asp?PaperNum=1234
     paper: cnn_2018_submission.pdf
     poster: kubilius_kar_ccn2018_small.pdf
