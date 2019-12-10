@@ -3,7 +3,7 @@ title: Toward goal-driven neural network models for the rodent whisker-trigemina
 authors: Chengxu Zhuang, Jonas Kubilius, Mitra Hartmann, Daniel Yamins
 journal: NIPS (oral)
 year: 2017
-categories: Papers
+categories: Papers, Talks, Posters
 links:
     arXiv: https://arxiv.org/abs/1706.07555
     NIPS version: https://papers.nips.cc/paper/6849-toward-goal-driven-neural-network-models-for-the-rodent-whisker-trigeminal-system

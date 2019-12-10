@@ -3,7 +3,7 @@ title: Task-driven convolutional recurrent models of the visual system
 authors: Aran Nayebi*, Daniel Bear*, Jonas Kubilius*, Kohitij Kar, Surya Ganguli, David Sussillo, James J. DiCarlo, Daniel L. K. Yamins
 journal: NeurIPS (poster)
 year: 2018
-categories: Papers
+categories: Papers, Posters
 links:
     arXiv: https://arxiv.org/abs/1807.00053
     NeurIPS version: https://papers.nips.cc/paper/7775-task-driven-convolutional-recurrent-models-of-the-visual-system.pdf

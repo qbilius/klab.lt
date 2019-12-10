@@ -3,10 +3,14 @@ title: Brain-like object recognition with high-performing shallow recurrent ANNs
 authors: Jonas Kubilius*, Martin Schrimpf*, Ha Hong, Najib J. Majaj, Rishi Rajalingham, Elias B. Issa, Kohitij Kar, Pouya Bashivan, Jonathan Prescott-Roy, Kailyn Schmidt, Aran Nayebi, Daniel Bear, Daniel L. K. Yamins, James J. DiCarlo
 journal: NeurIPS (oral)
 year: 2019
-categories: Papers
+location: Vancouver, Canada
+date: 2019-12-12 10:05
+duration: 15 min
+categories: Papers, Talks, Posters
 links:
     paper: https://arxiv.org/abs/1909.06161
-    code: https://github.com/dicarlolab/cornet
+    code: https://github.com/dicarlolab/neurips2019
+    materials: https://neurips.cc/Conferences/2019/Schedule?showEvent=15882
     ECVP 2018 Symposium Talk: https://klab.lt/publications/talks/2019-ecvp/
 ---
 
