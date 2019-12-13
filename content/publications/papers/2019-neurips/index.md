@@ -9,6 +9,7 @@ duration: 15 min
 categories: Papers, Talks, Posters
 links:
     paper: https://arxiv.org/abs/1909.06161
+    poster: neurips2019_poster.pdf
     code: https://github.com/dicarlolab/neurips2019
     materials: https://neurips.cc/Conferences/2019/Schedule?showEvent=15882
     ECVP 2018 Symposium Talk: https://klab.lt/publications/talks/2019-ecvp/
