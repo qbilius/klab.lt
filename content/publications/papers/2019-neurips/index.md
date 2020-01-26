@@ -4,7 +4,7 @@ authors: Jonas Kubilius*, Martin Schrimpf*, Ha Hong, Najib J. Majaj, Rishi Rajal
 journal: NeurIPS (oral)
 year: 2019
 location: Vancouver, Canada
-date: 2019-12-12 10:05
+when: 2019-12-12 10:05
 duration: 15 min
 categories: Papers, Talks, Posters
 links:
